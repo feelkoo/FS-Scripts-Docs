@@ -1,5 +1,7 @@
 Config = {}
 
+---
+
 -- Základní nastavení
 Config.Debug = false
 Config.Language = 'cs'
