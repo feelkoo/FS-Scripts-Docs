@@ -1,6 +1,3 @@
--- Příklad config.lua souboru pro FiveM script
--- Tento soubor slouží jako ukázka syntax highlighting
-
 Config = {}
 
 -- Základní nastavení
