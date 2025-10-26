@@ -1,6 +1,6 @@
 Config = {}
 
----
+-------- Test
 
 -- Základní nastavení
 Config.Debug = false
