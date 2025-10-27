@@ -1,6 +1,6 @@
-Blackmarket is a simple and customizable black market system that allows players to buy illegal items using a dedicated tablet. It supports both ESX and QBCore frameworks with full integration for popular inventory, target, and progress systems.
+### Blackmarket is a simple and customizable black market system that allows players to buy illegal items using a dedicated tablet. It supports both ESX and QBCore frameworks with full integration for popular inventory, target, and progress systems.
 
-## Features
+### Features
 Blackmarket tablet as an interactable item
 Compatible with ESX & QBCore
 Works with ox_inventory and qb-inventory
