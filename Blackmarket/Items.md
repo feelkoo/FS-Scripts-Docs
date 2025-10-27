@@ -37,3 +37,33 @@ Add to `qb-core/shared/items.lua`:
 ```lua
 blackmarket_tablet = {name = "blackmarket_tablet", label = "Blackmarket Tablet", weight = 500, type = "item", image = "blackmarket_tablet.png", unique = true, useable = true, shouldClose = false, combinable = nil, description = "A tablet for accessing the blackmarket"},
 ```
+
+## Blackmarket Items Configuration / Examples 
+Configure items to sell in `config.lua`:
+
+```lua
+Config.Items = {
+    { name = 'WEAPON_PISTOL', label = 'Pistol', price = 5000, type = 'weapon', currency = 'money' },
+    { name = 'ammo-9', label = '9mm Ammo (50x)', price = 500, type = 'item', amount = 50, currency = 'money' },
+    { name = 'lockpick', label = 'Lockpick', price = 250, type = 'item', amount = 1, currency = 'money' },
+}
+```
+
+# OX_inventory items
+Example items for `ox_inventory/data/items.lua`:
+
+```lua
+['baggy_weed'] = {
+    label = 'Weed Baggy',
+    weight = 1,
+    stack = true,
+    close = true,
+}
+```
+
+### qb-inventory items
+Example items for `qb-core/shared/items.lua`:
+
+```lua
+baggy_weed = {name = "baggy_weed", label = "Weed Baggy", weight = 1, type = "item", image = "baggy_weed.png", unique = false, useable = false, shouldClose = true, combinable = nil, description = "Weed baggy"},
+```
