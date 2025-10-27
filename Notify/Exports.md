@@ -1,7 +1,6 @@
 Types: 'success', 'error', 'warning', 'info', 'inform'
 Positions: 'top-right', 'top-middle', 'top-left'
 
-### Exports
 #### CLIENT-SIDE EXPORT:
 ```lua
   exports['fs_notify']:SendNotification({ type = 'success', title = 'Title', description = 'Description', duration = 5000, position = 'top-right' })
