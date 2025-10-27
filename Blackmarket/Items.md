@@ -1,7 +1,7 @@
 ## Blackmarket Tablet Item
 Images for items can be downloaded here! -> https://items.bit-scripts.com/
 
-# ox_inventory (ESX)
+### ox_inventory (ESX)
 Add to `ox_inventory/data/items.lua`:
 
 ```lua
@@ -49,7 +49,7 @@ Config.Items = {
 }
 ```
 
-# OX_inventory items
+### OX_inventory items
 Example items for `ox_inventory/data/items.lua`:
 
 ```lua
