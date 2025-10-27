@@ -1,4 +1,4 @@
-## Categories - Config
+#### Categories - Config
 ```lua
 {
     name = 'weapons', -- ID of category
@@ -10,7 +10,7 @@
 }
 ```
 
-## Crafting Benches / Recipes - Config
+#### Crafting Benches / Recipes - Config
 1. Crafting Bench
 ```lua
 {
