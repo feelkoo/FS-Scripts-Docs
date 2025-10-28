@@ -1,6 +1,6 @@
 #### Types
-Types: 'success', 'error', 'warning', 'info', 'inform'
-Positions: 'top-right', 'top-middle', 'top-left'
+- `type`: `success`, `error`, `warning`, `info`, `inform`
+- `Positions`: `top-right`, `top-middle`, `top-left`
 
 #### CLIENT-SIDE EXPORT:
 ```lua
