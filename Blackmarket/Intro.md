@@ -4,5 +4,3 @@
 - Supports ESX and QBCore, `ox_target`/`qb-target`, `ox_inventory`/`qb-inventory`, and notifications via `fs_notify`, `okokNotify`, or a custom callback.
 - All texts live in the `locales` folder and are selected via `Config.Locale`.
 - NPC behaviour (weapons, animations, vehicles, blips, scams, police reactions) is configured in `Config.*`.
-
-- test
