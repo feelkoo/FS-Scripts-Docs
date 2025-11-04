@@ -279,7 +279,7 @@ Config.DiscordWebhook = {
         {
             enabled = true,
             name = 'General Chat',
-            url = 'https://discord.com/api/webhooks/1429167308735254670/nPnz2bgAs6OEvyeP6Ewz_s3-gUbMrk2d65rHpI6vqvm8jTr5d9isRxTc5LIB4Jwq9xFL',
+            url = 'Your Webhook Link',
             webhookName = 'FS Chat - General', -- Name shown in Discord
             webhookAvatar = 'https://i.imgur.com/4M34hi2.png', -- Avatar URL (optional)
             footerText = 'General Chat', -- Footer text
@@ -291,7 +291,7 @@ Config.DiscordWebhook = {
         {
             enabled = true,
             name = 'Emergency Services',
-            url = 'https://discord.com/api/webhooks/1429176560518303938/6eSQlJe0QckEViox8nuRsCJt2p8RmdCreYSPnzaDtUQypUiZ-ETqbcySjyKZESRgCDS7', -- Add your webhook URL here
+            url = 'Your Webhook Link', -- Add your webhook URL here
             webhookName = 'FS Chat - Emergency',
             webhookAvatar = 'https://i.imgur.com/police-icon.png',
             footerText = 'Emergency Services',
