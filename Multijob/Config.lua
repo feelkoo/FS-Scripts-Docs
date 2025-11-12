@@ -36,7 +36,7 @@ end
 Config.Discord = {
     Enabled = true,
     BotToken = 'Your Bot Token',
-    GuildId = 'Your Discord ID server',
+    GuildId = 'Your Discord server ID',
 
     AutoSync = true,
     SyncInterval = 1000,
@@ -71,6 +71,7 @@ Config.UseCommand = false
 Config.SwitchCooldown = 5
 Config.OpenMenuKey = 'F6'
 Config.CommandName = 'jobs'
+Config.ButtonAvailableJobs = true
 
 Config.AdminGroups = {
     'admin',
