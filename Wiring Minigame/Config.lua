@@ -10,10 +10,25 @@ Config.DefaultDifficulty = 'normal'
 -- MINIGAME DIFFICULTY SETTING
 -- ============================================================================
 Config.WiringDifficulty = {
+    ['easy'] = {
+        wires = {'A', 'B', 'C', 'D'},
+        timeLimit = 12,
+        description = 'Easy difficulty'
+    },
     ['normal'] = {
         wires = {'A', 'B', 'C', 'D', 'E', 'F'},
         timeLimit = 8,
+        description = 'Normal difficulty'
+    },
+    ['medium'] = {
+        wires = {'A', 'B', 'C', 'D', 'E', 'F', 'G'},
+        timeLimit = 6,
         description = 'Medium difficulty'
+    },
+    ['hard'] = {
+        wires = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'},
+        timeLimit = 5,
+        description = 'Hard difficulty'
     }
 }
 
@@ -55,6 +70,14 @@ Config.GameSettings = {
 -- ============================================================================
 -- EXPORT FUNCTIONS FOR OTHER SCRIPTS
 -- ============================================================================
+-- ["fs_wiring"] = function()
+--  return exports.fs_wiring:wiring("normal")
+-- end
+
+-- or
+
+-- local success = exports.fs_wiring:wiring("normal")
+
 Config.Exports = {
     startWiringMinigame = true,
     isMinigameActive = true,
