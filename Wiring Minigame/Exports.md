@@ -1,7 +1,7 @@
 #### CLIENT-SIDE EXPORT:
 ```lua
 ["fs_wiring"] = function()
-  return exports.fs_wiring:wiring("medium")
+  return exports.fs_wiring:wiring("normal")
 end
 ```
 OR
