@@ -9,6 +9,7 @@ Config.Inventory = 'ox_inventory' -- Available options: 'ox_inventory' (recommen
 Config.ProgressBar = 'ox_lib' -- Available options: 'ox_lib' (recommended), 'qb-progressbar' - QBCore progress bar
 Config.Target = 'ox_target' -- Available options: 'ox_target' (recommended), 'qb-target' - QBCore target system
 Config.InventoryImagePath = 'nui://ox_inventory/web/images/' -- For ox_inventory: 'nui://ox_inventory/web/images/' - For qb-inventory: 'nui://qb-inventory/html/images/'
+Config.DefaultCurrency = 'black_money' -- Available options: 'money' (default cash) or 'black_money' (dirty money)
 
 -- ====================================
 -- NOTIFICATION SYSTEM
@@ -24,7 +25,7 @@ Config.SendClientNotification = function(data)
     --exports['okokNotify']:Alert(data.title or '', data.description, data.duration or 5000, data.type or 'info', playSound)
 
     -- Example for ESX:
-    exports["esx_notify"]:Notify(data.type or 'error', data.duration or 5000, data.description)
+    exports["esx_notify"]:Notify(data.type or 'info', data.duration or 5000, data.description, data.title)
 
     -- Example for QBCore:
     -- QBCore.Functions.Notify(data.description, data.type or 'primary', data.duration or 5000)
@@ -101,10 +102,10 @@ Config.NPCWeapon = 'WEAPON_PISTOL' -- Weapon given to dealer when shooting
 Config.NPCWeaponAmmo = 250 -- Ammo amount for dealer weapon
 
 Config.ReactionChances = {
-    Talk = 0,
+    Talk = 100,
     Run = 0,
     Attack = 0,
-    Shoot = 100
+    Shoot = 0
 }
 
 Config.SpawnLocations = {
@@ -121,12 +122,11 @@ Config.SpawnLocations = {
 }
 
 Config.Items = {
-    { name = 'WEAPON_PISTOL', label = 'Pistol', price = 5000, type = 'weapon', currency = 'money' },
-    { name = 'WEAPON_COMBATPISTOL', label = 'Combat Pistol', price = 7500, type = 'weapon', currency = 'money' },
-    { name = 'WEAPON_SMG', label = 'SMG', price = 15000, type = 'weapon', currency = 'money' },
-    { name = 'ammo-9', label = '9mm Ammo (50x)', price = 500, type = 'item', amount = 50, currency = 'money' },
-    { name = 'ammo-45', label = '.45 ACP Ammo (50x)', price = 600, type = 'item', amount = 50, currency = 'money' },
-    { name = 'lockpick', label = 'Lockpick', price = 250, type = 'item', amount = 1, currency = 'money' },
-    { name = 'baggy_weed', label = 'Weed (10g)', price = 150, type = 'item', amount = 10, currency = 'money' },
-
+    { name = 'WEAPON_PISTOL', label = 'Pistol', price = 5000, type = 'weapon'},
+    { name = 'WEAPON_COMBATPISTOL', label = 'Combat Pistol', price = 7500, type = 'weapon'},
+    { name = 'WEAPON_SMG', label = 'SMG', price = 15000, type = 'weapon'},
+    { name = 'ammo-9', label = '9mm Ammo (50x)', price = 500, type = 'item', amount = 50},
+    { name = 'ammo-45', label = '.45 ACP Ammo (50x)', price = 600, type = 'item', amount = 50},
+    { name = 'lockpick', label = 'Lockpick', price = 250, type = 'item', amount = 1},
+    { name = 'baggy_weed', label = 'Weed (10g)', price = 150, type = 'item', amount = 10},
 }
