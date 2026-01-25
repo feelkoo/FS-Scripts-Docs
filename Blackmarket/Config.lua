@@ -18,13 +18,13 @@ Config.SendClientNotification = function(data)
     --lib.notify(data)
 
     -- fsNotify (requires: title, message, time, type, playSound) -- Just uncomment it and comment lib.notify(data)
-    exports['fs_notify']:SendNotification({title = data.title, description = data.description, duration = data.duration or 5000, type = data.type or 'info', position = 'top-right'})
+    --exports['fs_notify']:SendNotification({title = data.title, description = data.description, duration = data.duration or 5000, type = data.type or 'info', position = 'top-right'})
 
     -- okokNotify (requires: title, message, time, type, playSound) -- Just uncomment it and comment lib.notify(data)
     --exports['okokNotify']:Alert(data.title or '', data.description, data.duration or 5000, data.type or 'info', playSound)
 
     -- Example for ESX:
-    -- ESX.ShowNotification(data.description)
+    exports["esx_notify"]:Notify(data.type or 'error', data.duration or 5000, data.description)
 
     -- Example for QBCore:
     -- QBCore.Functions.Notify(data.description, data.type or 'primary', data.duration or 5000)
@@ -128,4 +128,5 @@ Config.Items = {
     { name = 'ammo-45', label = '.45 ACP Ammo (50x)', price = 600, type = 'item', amount = 50, currency = 'money' },
     { name = 'lockpick', label = 'Lockpick', price = 250, type = 'item', amount = 1, currency = 'money' },
     { name = 'baggy_weed', label = 'Weed (10g)', price = 150, type = 'item', amount = 10, currency = 'money' },
+
 }
