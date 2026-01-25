@@ -8,8 +8,8 @@ Config.Framework = 'ESX' -- 'ESX' or 'QB'
 Config.Inventory = 'ox_inventory' -- Available options: 'ox_inventory' (recommended), 'qb-inventory' - QBCore default inventory
 Config.ProgressBar = 'ox_lib' -- Available options: 'ox_lib' (recommended), 'qb-progressbar' - QBCore progress bar
 Config.Target = 'ox_target' -- Available options: 'ox_target' (recommended), 'qb-target' - QBCore target system
-Config.InventoryImagePath = 'nui://ox_inventory/web/images/' -- For ox_inventory: 'nui://ox_inventory/web/images/' - For qb-inventory: 'nui://qb-inventory/html/images/'
 Config.DefaultCurrency = 'black_money' -- Available options: 'money' (default cash) or 'black_money' (dirty money)
+Config.InventoryImagePath = 'nui://ox_inventory/web/images/' -- For ox_inventory: 'nui://ox_inventory/web/images/' - For qb-inventory: 'nui://qb-inventory/html/images/'
 
 -- ====================================
 -- NOTIFICATION SYSTEM
@@ -122,9 +122,9 @@ Config.SpawnLocations = {
 }
 
 Config.Items = {
-    { name = 'WEAPON_PISTOL', label = 'Pistol', price = 5000, type = 'weapon'},
-    { name = 'WEAPON_COMBATPISTOL', label = 'Combat Pistol', price = 7500, type = 'weapon'},
-    { name = 'WEAPON_SMG', label = 'SMG', price = 15000, type = 'weapon'},
+    { name = 'WEAPON_PISTOL', label = 'Pistol', price = 5000, type = 'item'},
+    { name = 'WEAPON_COMBATPISTOL', label = 'Combat Pistol', price = 7500, type = 'item'},
+    { name = 'WEAPON_SMG', label = 'SMG', price = 15000, type = 'item'},
     { name = 'ammo-9', label = '9mm Ammo (50x)', price = 500, type = 'item', amount = 50},
     { name = 'ammo-45', label = '.45 ACP Ammo (50x)', price = 600, type = 'item', amount = 50},
     { name = 'lockpick', label = 'Lockpick', price = 250, type = 'item', amount = 1},
